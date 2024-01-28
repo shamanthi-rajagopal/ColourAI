@@ -1,0 +1,85 @@
+
+
+  #color {
+    position: absolute;
+    top: 200px;
+    left: 340px;
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #box {
+    position: absolute;
+    top: 200px;
+    left: 815px;
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #guess {
+    font-size:17px;
+  }
+
+  .white {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .black {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+  }
+
+  .heading {
+    position: absolute;
+    left:578px;
+    font-size:40px;
+    font-family: 'Comic Sans MS';
+    font-style: bold;
+  }
+
+  .rainbowText {
+    position: absolute;
+    left:815px;
+    font-size:40px;
+    font-family: 'Comic Sans MS';
+    font-style: bold;
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: move 200s linear infinite;
+  }
+  
+  @keyframes move {
+      to {
+          background-position: 4500vh;
+      }
+  }
+  @media screen and (max-width:900px){
+    .rainbowText{
+      font-size:2rem;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .rainbowText{
+      font-size:1rem;
+    }
+  }
